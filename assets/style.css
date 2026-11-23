@@ -483,3 +483,12 @@ h2 {
   .wordmark-text { display: none; }
   nav { gap: 0.15rem 0.75rem; font-size: 0.78rem; }
 }
+
+/* Fit six nav links on small phones */
+@media (max-width: 480px) {
+  nav { gap: 10px !important; }
+  nav a { font-size: 10.5px !important; letter-spacing: 0.06em !important; }
+}
+@media (max-width: 360px) {
+  nav a[href="#about"] { display: none; }
+}
